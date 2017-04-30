@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.windowsnt.project">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconapp1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".MainmenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Class1activity"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".Viewgraph2"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".MonthActivity"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".MonthedActivity"
+            android:theme="@style/AppTheme2"/>
+       <activity android:name=".WebviewActivity"/>
+        <activity android:name=".ListDayActivity"/>
+        <activity android:name=".ListMonthActivity"/>
+        </application>
+
+</manifest>

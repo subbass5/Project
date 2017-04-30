@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:orientation="vertical"
+    tools:context=".Class1activity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <com.numetriclabz.numandroidcharts.LineChart
+        android:id="@+id/linechart2"
+        android:layout_height="400dp"
+        android:layout_width="wrap_content"/>
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/btnRe2"
+        android:text="กดเพื่อดูข้อมูลล่าสุด"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/bootstrap_brand_secondary_fill"
+        android:backgroundTint="@color/bootstrap_brand_success"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:id="@+id/btnGoMain2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/bootstrap_brand_info"
+        android:text="กลับสู่หน้าหลัก"
+        android:textColor="@color/bootstrap_brand_secondary_fill"
+        android:textSize="14sp" />
+</LinearLayout>
+
+</LinearLayout>

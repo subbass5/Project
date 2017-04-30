@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Electricity House</string>
+    <string name="dialog_title">Dialog</string>
+    <string name="cancel">Cancel</string>
+    <string name="lblMonth">ค่าบริการ</string>
+    <string name="lblmixUnit">รวมค่าไฟฟ้าพื้นฐาน</string>
+
+</resources>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur">
+
+
+    <LinearLayout xmlns:plainpie="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="right"
+    android:layout_height="126dp"
+    android:layout_weight="0.34">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:src="@drawable/banner" />
+
+
+</LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <az.plainpie.PieView
+                android:id="@+id/pieView1"
+                android:layout_width="135dp"
+                android:layout_height="140dp"
+                android:layout_alignTop="@+id/pieView1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                plainpie:inner_pie_padding="30"
+                plainpie:inner_text_visibility="true"
+                plainpie:percentage="10"
+                plainpie:percentage_size="30" />
+
+            <az.plainpie.PieView
+                android:id="@+id/pieView2"
+                android:layout_width="135dp"
+                android:layout_height="140dp"
+                android:layout_alignTop="@+id/pieView1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                plainpie:inner_pie_padding="30"
+                plainpie:inner_text_visibility="true"
+                plainpie:percentage="20"
+                plainpie:percentage_size="30" />
+
+            <az.plainpie.PieView
+                android:id="@+id/pieView3"
+                android:layout_width="135dp"
+                android:layout_height="140dp"
+                android:layout_alignTop="@+id/pieView1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                plainpie:inner_pie_padding="30"
+                plainpie:inner_text_visibility="true"
+                plainpie:percentage="30"
+                plainpie:percentage_size="30" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <az.plainpie.PieView
+                android:id="@+id/pieViewall"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignTop="@+id/pieView1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                plainpie:inner_pie_padding="30"
+                plainpie:inner_text_visibility="true"
+                plainpie:percentage="60"
+                plainpie:percentage_size="30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#523316"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btngoMonth"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bootstrap_brand_danger"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="cursive"
+                android:paddingBottom="10dp"
+                android:text="ดูค่าไฟฟ้าปัจจุบัน"
+                android:textAlignment="center"
+                android:textColor="@color/bootstrap_brand_secondary_fill"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btngoMonthed"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bootstrap_brand_danger"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="cursive"
+                android:paddingBottom="10dp"
+                android:text="ดูค่าไฟฟ้าย้อนหลัง"
+                android:textColor="@color/bootstrap_brand_secondary_fill"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStatic"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bootstrap_brand_primary"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="cursive"
+                android:paddingBottom="10dp"
+                android:text="สถิติการใช้งานไฟฟ้า"
+                android:textAlignment="center"
+                android:textColor="@color/bootstrap_brand_secondary_fill"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnSimmulator"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bootstrap_brand_primary"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="cursive"
+                android:paddingBottom="10dp"
+                android:text="จำลองค่าไฟฟ้า"
+                android:textAlignment="center"
+                android:textColor="@color/bootstrap_brand_secondary_fill"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnWebView"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bootstrap_brand_success"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="cursive"
+                android:paddingBottom="10dp"
+                android:text="ดูสถิติแบบเว็บ"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btnList"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bootstrap_brand_success"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="cursive"
+                android:paddingBottom="10dp"
+                android:text="ดูข้อมูล"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

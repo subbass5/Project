@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+<TextView
+    android:id="@+id/txtHaed"
+    android:text="ประจำเดือน xx ปี xxxx"
+    android:textSize="24sp"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_marginTop="20dp"
+    android:fontFamily="sans-serif-condensed"
+    android:layout_weight="0.62"
+    android:textStyle="normal|bold"
+    android:layout_marginBottom="30dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtlblUnit"
+            android:text=" หน่วยไฟฟ้า "
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="180dp"
+            android:textAlignment="textEnd" />
+        <TextView
+            android:id="@+id/txtunit"
+            android:text="    ............."
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtlblperunit"
+            android:text="ค่าพลังงานไฟฟ้า"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/txtperunit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="    ............."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtlblService"
+            android:text="ค่าบริการ"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="textEnd" />
+        <TextView
+            android:id="@+id/txtService"
+            android:text="    ............."
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtlblmixPower"
+            android:text="รวมค่าไฟฟ้าฐาน"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:textAlignment="textEnd"
+            android:layout_width="180dp"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/txtmixPower"
+            android:text="    ............."
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtlblft"
+            android:text="ค่าไฟฟ้าแปรผัน (Ft) "
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="textEnd" />
+        <TextView
+            android:id="@+id/txtft"
+            android:text="    ............."
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtlblVat"
+            android:text="ภาษีมูลค่าเพิ่ม"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="textEnd" />
+        <TextView
+            android:id="@+id/txtVat"
+            android:text="    ............."
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txttot"
+            android:text="รวมเงินค่าไฟฟ้า"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="textEnd" />
+        <TextView
+            android:id="@+id/txttotal"
+            android:text="    ............."
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="กลับสู่หน้าหลัก"
+        android:id="@+id/btnbacktomain"
+        android:layout_weight="1"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@color/bootstrap_brand_info"
+        android:textSize="15sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/bootstrap_brand_secondary_fill"
+        android:backgroundTintMode="src_over"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp" />
+
+
+</LinearLayout>
+
+
+
+</ScrollView>
